@@ -39,7 +39,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--orange)}
 .hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,9vw,130px);line-height:0.92;color:var(--white);letter-spacing:2px;margin-bottom:28px}
 .hero-title .accent{color:var(--orange)}
-.hero-sub{font-size:16px;line-height:1.7;color:var(--stone);max-width:440px;margin-bottom:48px}
+.hero-sub{font-size:16px;line-height:1.7;color:var(--stone);max-width:440px;margin-bottom:20px}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .btn-primary{background:var(--orange);color:var(--white);padding:16px 36px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s,transform 0.15s;display:inline-block}
 .btn-primary:hover{background:var(--orange-dim);transform:translateY(-1px)}
@@ -56,17 +56,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,5vw,72px);color:var(--white);line-height:1;letter-spacing:1px;margin-bottom:64px}
 .section-title em{font-family:'DM Serif Display',serif;font-style:italic;color:var(--orange)}
 /* SERVICES */
-.services{padding:120px 48px;background:var(--dark)}
+.services{padding:120px 48px;background:#222222}
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
-.service-card{background:var(--charcoal);padding:40px 36px;position:relative;overflow:hidden;transition:background 0.3s}
+.service-card{background:#2d2d2d;padding:40px 36px;position:relative;overflow:hidden;transition:background 0.3s}
 .service-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--orange);transform:scaleY(0);transform-origin:bottom;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1)}
-.service-card:hover{background:var(--mid)}
+.service-card:hover{background:#3a3a3a}
 .service-card:hover::before{transform:scaleY(1)}
 .service-icon{font-size:32px;margin-bottom:20px;display:block}
 .service-name{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1px;color:var(--white);margin-bottom:12px}
 .service-desc{font-size:14px;line-height:1.7;color:var(--stone)}
 /* BEFORE AFTER */
-.ba-section{padding:120px 48px;background:var(--black)}
+.ba-section{padding:120px 48px;background:#2e2e2e}
 .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:0}
 .ba-pair{display:flex;flex-direction:column;gap:0}
 .ba-imgs{display:grid;grid-template-columns:1fr 1fr;gap:4px}
@@ -76,9 +76,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .ba-tag{position:absolute;top:12px;left:12px;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;border-radius:2px;font-weight:500}
 .ba-tag-before{background:rgba(10,10,10,0.75);color:var(--light)}
 .ba-tag-after{background:var(--orange);color:var(--white)}
-.ba-caption{font-size:13px;color:var(--stone);padding:12px 4px 0;line-height:1.5}
+.ba-caption{font-size:13px;color:var(--stone);padding:12px 4px 0;line-height:1.5}.ba-pair{background:#242424;padding:16px;border-radius:2px}
 /* GALLERY */
-.gallery{padding:120px 48px;background:var(--dark)}
+.gallery{padding:120px 48px;background:#202020}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,380px);gap:6px}
 .gallery-item{position:relative;overflow:hidden;cursor:pointer}
 .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.7s cubic-bezier(0.4,0,0.2,1),filter 0.5s;filter:brightness(0.9);display:block}
@@ -97,7 +97,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .lightbox-prev{left:24px}
 .lightbox-next{right:24px}
 /* DIFFERENTIATION */
-.diff-section{padding:120px 48px;background:var(--charcoal);position:relative}
+.diff-section{padding:120px 48px;background:#252525;position:relative}
 .diff-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 20% 50%,rgba(232,93,26,0.05) 0%,transparent 70%);pointer-events:none}
 .diff-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;position:relative;z-index:1}
 .diff-body{font-size:15px;line-height:1.8;color:var(--stone);margin-bottom:20px}
@@ -110,14 +110,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .diff-point-title{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--white);margin-bottom:4px}
 .diff-point-desc{font-size:13px;line-height:1.7;color:var(--stone)}
 /* REVIEWS */
-.reviews{padding:120px 0 80px;background:var(--black);position:relative;overflow:hidden}
+.reviews{padding:120px 0 80px;background:#1a1a1a;position:relative;overflow:hidden}
 .reviews::before{content:'"';position:absolute;font-family:'DM Serif Display',serif;font-size:500px;color:rgba(232,93,26,0.04);line-height:1;top:-80px;left:-40px;user-select:none;pointer-events:none}
 .reviews .section-tag,.reviews .section-title,.reviews-badge{padding-left:48px;padding-right:48px}
 .reviews-ticker-wrap{overflow:hidden;margin-top:64px;margin-bottom:40px;-webkit-mask-image:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%)}
 .reviews-ticker{display:flex;gap:20px;width:max-content;animation:ticker-scroll 60s linear infinite}
 .reviews-ticker:hover{animation-play-state:paused}
 @keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.reel-card{background:var(--charcoal);border-top:3px solid var(--orange);padding:32px;border-radius:2px;width:360px;flex-shrink:0;display:flex;flex-direction:column}
+.reel-card{background:#333333;border-top:3px solid var(--orange);padding:32px;border-radius:2px;width:360px;flex-shrink:0;display:flex;flex-direction:column}
 .reel-stars{display:flex;gap:3px;margin-bottom:16px;color:var(--orange);font-size:14px}
 .reel-text{font-size:14px;line-height:1.75;color:var(--light);font-style:italic;flex:1;margin-bottom:24px}
 .reel-author{display:flex;align-items:center;gap:12px;margin-top:auto}
@@ -127,7 +127,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .reviews-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(232,93,26,0.1);border:1px solid rgba(232,93,26,0.2);padding:12px 20px;border-radius:2px;font-size:13px;color:var(--light)}
 .reviews-badge strong{color:var(--orange)}
 /* QUOTE */
-.quote-section{padding:120px 48px;background:var(--dark);text-align:center}
+.quote-section{padding:120px 48px;background:#282828;text-align:center}
 .quote-section .section-tag{justify-content:center}
 .quote-sub{font-size:15px;color:var(--stone);margin-bottom:48px;max-width:520px;line-height:1.7;margin-left:auto;margin-right:auto}
 .quote-form{max-width:720px;margin-left:auto;margin-right:auto;text-align:left}
@@ -135,12 +135,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .form-group{display:flex;flex-direction:column;gap:8px}
 .form-group.full{margin-bottom:20px}
 .form-group label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--stone)}
-.form-group input,.form-group select,.form-group textarea{background:var(--charcoal);border:1px solid rgba(200,196,190,0.12);border-radius:2px;padding:14px 16px;color:var(--white);font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s;-webkit-appearance:none}
+.form-group input,.form-group select,.form-group textarea{background:#333333;border:1px solid rgba(200,196,190,0.12);border-radius:2px;padding:14px 16px;color:var(--white);font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s;-webkit-appearance:none}
 .form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;cursor:pointer}
 .form-group select option{background:var(--charcoal)}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--orange)}
 .form-group textarea{resize:vertical;min-height:100px}
-.form-submit{margin-top:8px;cursor:pointer;border:none}
+.form-submit{margin-top:8px;cursor:pointer;border:none;background:#555555}.form-submit:hover{background:#444444}
 .form-note{font-size:12px;color:var(--stone);margin-top:12px}
 /* CTA */
 .cta-section{padding:120px 48px;background:var(--black);text-align:center;position:relative}
@@ -153,7 +153,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .cta-contact-item:hover{color:var(--orange)}
 .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
 /* FOOTER */
-footer{padding:40px 48px;background:var(--dark);border-top:1px solid rgba(200,196,190,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer{padding:40px 48px;background:#1e1e1e;border-top:1px solid rgba(200,196,190,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:3px;color:var(--white)}
 .footer-logo span{color:var(--orange)}
 .footer-copy{font-size:12px;color:var(--stone)}
@@ -227,12 +227,12 @@ footer{padding:40px 48px;background:var(--dark);border-top:1px solid rgba(200,19
   .chat-box{width:calc(100vw - 32px);right:16px}
   .chat-trigger{bottom:20px;right:20px}
 }
-</style>
+.hero-slogan{font-size:14px;color:var(--light);margin-bottom:28px;letter-spacing:0.5px;line-height:1.7}.hero-slogan em{color:var(--orange);font-style:italic;font-family:'DM Serif Display',serif}</style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">Mixed<span>.</span>Concrete</div>
+  <div class="nav-logo">Mixed<span>.</span>Concrete<span>.</span>Services</div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#gallery">Gallery</a></li>
@@ -257,6 +257,7 @@ footer{padding:40px 48px;background:var(--dark);border-top:1px solid rgba(200,19
     <div class="hero-eyebrow">Greater Eastern Suburbs, Melbourne</div>
     <h1 class="hero-title">Mixed<br><span class="accent">Concrete</span><br>Services</h1>
     <p class="hero-sub">Big or small, we pour it all. Premium concreting across driveways, pool surrounds, stairs, paths and more &mdash; done right, every time.</p>
+    <p class="hero-slogan">Mixed Concreting Services &mdash; Big or Small.<br><em>Done once, done right every time.</em></p>
     <div class="hero-actions">
       <a href="tel:0433582982" class="btn-primary">Call Jake Now</a>
       <a href="#gallery" class="btn-ghost">View Our Work</a>
@@ -277,10 +278,10 @@ footer{padding:40px 48px;background:var(--dark);border-top:1px solid rgba(200,19
     <div class="service-card"><span class="service-icon">&#128704;</span><div class="service-name">Pool Surrounds</div><p class="service-desc">Slip-resistant, beautiful pool surrounds in exposed aggregate, honed or smooth finishes.</p></div>
     <div class="service-card"><span class="service-icon">&#129695;</span><div class="service-name">Stairs &amp; Steps</div><p class="service-desc">Concrete staircases and steps built to code &mdash; solid, safe and finished to a high standard.</p></div>
     <div class="service-card"><span class="service-icon">&#128763;</span><div class="service-name">Paths &amp; Walkways</div><p class="service-desc">Custom shaped paths, side access walkways and pedestrian areas done with precision and care.</p></div>
-    <div class="service-card"><span class="service-icon">&#127959;</span><div class="service-name">Commercial Work</div><p class="service-desc">Industrial paths, warehouse floors and commercial slab work for contractors and builders.</p></div>
-    <div class="service-card"><span class="service-icon">&#10024;</span><div class="service-name">Exposed Aggregate</div><p class="service-desc">Premium exposed aggregate finishes &mdash; stone-washed texture that looks incredible and stays tough.</p></div>
-    <div class="service-card"><span class="service-icon">&#129521;</span><div class="service-name">Retaining Walls</div><p class="service-desc">Solid concrete retaining walls built to spec &mdash; precision poured and perfectly levelled for lasting structural integrity.</p></div>
+    <div class="service-card"><span class="service-icon">&#10024;</span><div class="service-name">Decorative Concrete</div><p class="service-desc">From exposed aggregate and honed concrete to glow-in-the-dark, coloured and stamped finishes &mdash; anything from a standard home path to something truly unique.</p></div>
     <div class="service-card"><span class="service-icon">&#9636;</span><div class="service-name">Concrete Slabs</div><p class="service-desc">House pads, shed slabs, extension slabs and more &mdash; poured flat, level and within tight tolerances every time.</p></div>
+    <div class="service-card"><span class="service-icon">&#127783;</span><div class="service-name">Permeable Concrete</div><p class="service-desc">Drainage-friendly permeable concrete for driveways, paths and outdoor areas — reduces runoff and meets council requirements.</p></div>
+    <div class="service-card"><span class="service-icon">&#127959;</span><div class="service-name">Civil Work</div><p class="service-desc">Kerbing, footpaths, civil infrastructure and large-scale concrete works for builders, developers and councils.</p></div>
   </div>
 </section>
 
@@ -698,7 +699,7 @@ footer{padding:40px 48px;background:var(--dark);border-top:1px solid rgba(200,19
           <option value="" disabled selected>Select a service...</option>
           <option>Driveway</option><option>Pool Surrounds</option><option>Stairs &amp; Steps</option>
           <option>Path / Walkway</option><option>Exposed Aggregate</option><option>Concrete Slab</option>
-          <option>Retaining Wall</option><option>Commercial Work</option><option>Other</option>
+          <option>Civil Work</option><option>Decorative Concrete</option><option>Other</option>
         </select>
       </div>
     </div>
